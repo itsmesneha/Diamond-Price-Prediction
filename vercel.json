@@ -1,7 +1,14 @@
 {
-    "rewrites":[
-        {
-            "source":"/(.*)","destination":"/"
+    "routes": [
+      { "src": "/", "dest": "/app.py" }
+    ],
+    "functions": {
+      "api": {
+        "/": {
+          "handler": "app.handler",
+          "methods": ["GET", "POST"]
         }
-    ]
-}
+      }
+    }
+  }
+  
