@@ -1,0 +1,13 @@
+# Exported from Render on 2024-04-12T07:32:40Z
+services:
+- type: web
+  name: Diamond-Price-Prediction
+  runtime: python
+  repo: https://github.com/itsmesneha/Diamond-Price-Prediction
+  branch: main
+  plan: free
+  region: oregon
+  buildCommand: pip install -r requirements.txt
+  startCommand: python app.py
+  autoDeploy: false
+version: "1"
